@@ -1,0 +1,69 @@
+.shadow_ef {
+  animation: shadow-coloring 4s ease-in-out 0s infinite alternate backwards;
+  -webkit-animation: shadow-coloring 4s ease-in-out 0s infinite alternate
+    backwards;
+}
+
+.text_color_ef {
+  animation: text-coloring 4s ease-in-out 0s infinite alternate backwards;
+  -webkit-animation: text-coloring 4s ease-in-out 0s infinite alternate
+    backwards;
+}
+
+@keyframes text-coloring {
+  from {
+    color: var(--light);
+  }
+
+  25% {
+    color: var(--gradiant-c1);
+  }
+
+  50% {
+    color: var(--gradiant-c2);
+  }
+
+  75% {
+    color: var(--gradiant-c3);
+  }
+
+  to {
+    color: var(--overlay);
+  }
+}
+
+@keyframes shadow-coloring {
+  from {
+    box-shadow: 3rem 5px 0px 0px var(--light);
+  }
+
+  25% {
+    box-shadow: 3rem 5px 0px 0px var(--gradiant-c1);
+  }
+
+  50% {
+    box-shadow: 3rem 5px 0px 0px var(--gradiant-c2);
+  }
+
+  75% {
+    box-shadow: 3rem 5px 0px 0px var(--gradiant-c3);
+  }
+
+  to {
+    box-shadow: 3rem 5px 0px 0px var(--overlay);
+  }
+}
+
+.full_width_ef {
+  animation: full-width-ef 2s ease-out 0.5s 1 normal forwards;
+  -webkit-animation: full-width-ef 2s ease-out 0.5s 1 normal forwards;
+}
+
+@keyframes full-width-ef {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}

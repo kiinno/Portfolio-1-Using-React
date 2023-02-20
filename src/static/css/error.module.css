@@ -1,0 +1,49 @@
+.err_container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  user-select: none;
+}
+.err_container .err_title {
+  color: rgb(188, 47, 47);
+  font-weight: 900;
+  font-size: 3rem;
+  margin: 0;
+}
+.err_container .err_msg {
+  background-color: var(--light);
+  font-weight: 500;
+  font-style: italic;
+  color: rgb(188, 47, 47);
+  padding: 0.7rem;
+  margin: 1.5rem 0;
+  word-break: break-all;
+}
+
+.err_container .back_button {
+  min-width: 100px;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+  color: var(--light);
+  background-color: rgb(188, 47, 47);
+  transition: background-color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out;
+  -ms-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+}
+.err_container .back_button:hover {
+  background-color: #de5050;
+}

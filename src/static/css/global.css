@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --primary: #011212;
+  --secondary: #1b2637;
+  --light: #fafafa;
+  --gradiant-c1: #1e053f;
+  --gradiant-c2: #711dc4;
+  --gradiant-c3: #be1111;
+  --overlay: rgba(0, 0, 0, 0.7);
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--light);
+  user-select: none;
+  text-transform: capitalize;
+}
+p {
+  line-height: 1.7;
+}
+.bg-responsive {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-blend-mode: overlay;
+  background-color: var(--overlay);
+  padding: 0 1rem;
+}
+button {
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style-type: none;
+}
+.grad-color {
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradiant,
+.grad-color {
+  background-image: linear-gradient(
+    45deg,
+    var(--gradiant-c1) 0%,
+    var(--gradiant-c2) 20%,
+    var(--gradiant-c3) 85%
+  );
+}
+
+.title {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+.typer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+.typer::after {
+  content: "";
+  height: 24px;
+  width: 1.4px;
+  display: inline-block;
+  background-color: var(--secondary);
+  margin-left: 5px;
+  vertical-align: middle;
+  animation: typing-carret-effect 0.4s ease 0s infinite alternate;
+  -webkit-animation: typing-carret-effect 0.4s ease 0s infinite alternate;
+}
+
+.owner-sender::before {
+  content: "KIINNO:";
+  background-color: var(--secondary);
+  padding: 5px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+ol li {
+  margin-bottom: 1rem;
+}
+.btn {
+  background-color: var(--secondary);
+  color: var(--light);
+  padding: 0.6rem 0.8rem;
+  text-transform: uppercase;
+  transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+@keyframes typing-carret-effect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

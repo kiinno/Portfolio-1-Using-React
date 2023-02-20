@@ -1,0 +1,40 @@
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.col {
+  background-color: var(--primary);
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: auto 1fr auto auto;
+  gap: 1rem;
+}
+.col .title {
+  font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  word-break: break-all;
+}
+.col .description {
+  word-break: break-all;
+  font-weight: lighter;
+  margin: 0;
+}
+.col .info {
+  padding: 0rem 0.6rem;
+  margin-top: 0px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.col .info li {
+  margin-bottom: 5px;
+}

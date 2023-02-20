@@ -1,0 +1,14 @@
+.skills_container {
+  background-image: url("../imgs/bg4.gif");
+}
+
+.grid_box {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media (min-width: 992px) {
+  .grid_box {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -1,0 +1,62 @@
+.progress_wrapper {
+}
+.progress_wrapper .progress {
+  display: flex;
+  flex-direction: column;
+}
+.progress_wrapper .progress .p_title {
+  text-transform: uppercase;
+  margin-bottom: 0.7rem;
+}
+.progress_wrapper .progress .p_block {
+  background-color: var(--secondary);
+  min-height: 1rem;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  padding: 0.2rem 0.3rem;
+}
+.progress_wrapper .progress .p_block .p_indecator {
+  background-color: var(--light);
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  padding: 7px 0;
+  width: 0%;
+  position: relative;
+}
+.progress_wrapper .progress .p_block .p_indecator .p_details {
+  position: absolute;
+  right: 0;
+  top: -0.7rem;
+  transform: translateY(-100%);
+  background-color: var(--primary);
+  padding: 3px 8px;
+  -webkit-transform: translateY(-100%) translateX(0%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+}
+.progress_wrapper .progress .p_block .p_indecator::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 0.6rem solid transparent;
+  border-top-color: var(--primary);
+  display: block;
+  transform: translate(0%, calc(-100% - -0.3rem));
+  -webkit-transform: translate(0%, calc(-100% - -0.3rem));
+  -moz-transform: translate(0%, calc(-100% - -0.3rem));
+  -ms-transform: translate(0%, calc(-100% - -0.3rem));
+  -o-transform: translate(0%, calc(-100% - -0.3rem));
+}
