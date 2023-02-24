@@ -28,7 +28,7 @@ const Outro = () => {
       {outroTyper[1] ? (
         <a
           className={"btn"}
-          href="https://github.com/users/elzerowebschool"
+          href="https://github.com/kiinno/Portfolio-1-Using-React"
           target={"_blank"}
           rel="noreferrer"
         >
