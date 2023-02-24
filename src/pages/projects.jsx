@@ -5,8 +5,8 @@ import styles from "../static/css/projects.module.css";
 const Contact = () => {
   const [repos, setRepos] = useState([]);
 
-  const API = "http://localhost:3010/repos";
-  // const API = "https://api.github.com/users/elzerowebschool/repos";
+  //const API = "http://localhost:3010/repos";
+  const API = "https://api.github.com/users/kiinno/repos";
 
   useEffect(() => {
     fetch(API, { method: "GET" })
