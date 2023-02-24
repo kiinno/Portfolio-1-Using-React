@@ -33,9 +33,9 @@ const Contact = () => {
               <div className={styles.col} key={repo.id}>
                 <h4
                   className={styles.title}
-                  title={repo.name.replaceAll("_", " ")}
+                  title={repo.name.replaceAll("-", " ")}
                 >
-                  {repo.name.replaceAll("_", " ")}
+                  {repo.name.replaceAll("-", " ")}
                 </h4>
                 <p className={styles.description}>{repo.description}</p>
                 <ul className={styles.info}>
