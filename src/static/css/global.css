@@ -60,10 +60,6 @@ ul {
   text-transform: uppercase;
 }
 .typer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.2rem;
 }
 .typer::after {
   content: "";
